@@ -498,6 +498,7 @@ header {
 main {
   width: 85%;
   margin: auto;
+  padding: 3rem 0;
 }
 @media (max-width: 39.999em) {
   main {

@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 main{
   @include m-auto;
+  padding: 3rem 0;
  
   @include mq(640px){
     margin-top: 2rem;
