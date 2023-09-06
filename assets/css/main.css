@@ -576,25 +576,29 @@ main {
 .main__content--flex--right h3 {
   font-size: 3rem;
 }
+@media (max-width: 47.999em) {
+  .main__content--flex--right h3 {
+    font-size: 2.4rem;
+  }
+}
 .main__content--flex--right p {
   color: hsl(219, 9%, 45%);
   font-size: 1.5rem;
+}
+@media (max-width: 47.999em) {
+  .main__content--flex--right p {
+    font-size: 1.2rem;
+  }
 }
 .main__content--flex--right .main__content--pricing {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 60%;
-  border: 1px solid red;
 }
 @media (max-width: 61.999em) {
   .main__content--flex--right .main__content--pricing {
-    min-width: 17.6rem;
-  }
-}
-@media (max-width: 47.999em) {
-  .main__content--flex--right .main__content--pricing {
-    min-width: 16.6rem;
+    min-width: 14.6rem;
   }
 }
 .main__content--flex--right .main__content--pricing div {
