@@ -58,6 +58,11 @@
         color: $pry-orange;
         font-weight: 900;
         font-size: 0.9rem;
+
+        @include mq(640px){
+          font-size: 1.2rem;
+          letter-spacing: 1.3px;
+        }
       }
 
       h3 {
