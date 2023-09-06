@@ -629,7 +629,14 @@ main {
 }
 @media (max-width: 61.999em) {
   .main__content--flex--right .main__content--pricing {
-    min-width: 14.6rem;
+    min-width: 18.6rem;
+    border: 1px solid yellow;
+  }
+}
+@media (max-width: 39.999em) {
+  .main__content--flex--right .main__content--pricing {
+    width: 100%;
+    border: 1px solid red;
   }
 }
 .main__content--flex--right .main__content--pricing div {
@@ -683,7 +690,7 @@ main {
 @media (max-width: 39.999em) {
   .main__content--flex--right .main__content--amount-flex .amount__container {
     width: 100%;
-    padding: 2.5rem 1rem;
+    padding: 2.2rem 1rem;
   }
 }
 

@@ -122,7 +122,14 @@ main{
         }
 
         @include mq(tab-port){
-          min-width: 14.6rem;
+          min-width: 18.6rem;
+          border: 1px solid yellow;
+        }
+
+        @include mq(640px){
+          width: 100%;
+          // min-width: 18.6rem;
+          border: 1px solid red;
         }
 
         div {
@@ -172,7 +179,7 @@ main{
 
           @include mq(640px){
             width: 100%;
-            padding: 2.5rem 1rem;
+            padding: 2.2rem 1rem;
           }
         }
       }
