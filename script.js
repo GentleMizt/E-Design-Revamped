@@ -198,5 +198,4 @@ hamMenu.addEventListener('click', ()=>{
 
   overlayClose.addEventListener('click', function () {
     overlay.style.display = 'none';
-    // document.querySelector('overlay').style.display = none;
   });
