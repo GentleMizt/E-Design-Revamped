@@ -18,10 +18,19 @@
       img{
         width: 22%
       }
+
       h4{
         font-size: .9rem;
       }
     }
+
+    @include mq(640px){
+      img{
+        width: 11%;
+        border: 1px solid red;
+      }
+    }
+
     @include dflexhalf;
     justify-content: center;
     gap: 1rem;

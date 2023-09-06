@@ -234,6 +234,12 @@ header {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 39.999em) {
+  .amount__submit .submit-btn img {
+    width: 11%;
+    border: 1px solid red;
+  }
+}
 
 .popup {
   background-color: rgba(0, 0, 0, 0.7);
@@ -559,7 +565,7 @@ main {
   .main__content--flex--right {
     width: 90%;
     margin: auto;
-    gap: 1.9rem;
+    gap: 2rem;
   }
 }
 .main__content--flex--right h2 {
