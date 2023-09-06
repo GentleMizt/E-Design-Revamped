@@ -68,7 +68,6 @@ main{
       flex-basis: 40%;
 
       @include mq(640px){
-        border: 1px solid red;
         width: 90%;
         margin: auto;
         gap: 1.9rem;
@@ -138,11 +137,19 @@ main{
           border: 1px solid blue;
           text-decoration: line-through;
           display: none;
+
+          @include mq(640px){
+            display: block;
+          }
         }
       }
 
       .main__content--pricing ~ p {
         text-decoration: line-through;
+
+        @include mq(640px){
+          display: none
+        }
       }
 
       .main__content--amount-flex {

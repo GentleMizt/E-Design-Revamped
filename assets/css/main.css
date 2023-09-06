@@ -557,7 +557,6 @@ main {
 }
 @media (max-width: 39.999em) {
   .main__content--flex--right {
-    border: 1px solid red;
     width: 90%;
     margin: auto;
     gap: 1.9rem;
@@ -631,8 +630,18 @@ main {
   text-decoration: line-through;
   display: none;
 }
+@media (max-width: 39.999em) {
+  .main__content--flex--right .main__content--pricing #hidden-price {
+    display: block;
+  }
+}
 .main__content--flex--right .main__content--pricing ~ p {
   text-decoration: line-through;
+}
+@media (max-width: 39.999em) {
+  .main__content--flex--right .main__content--pricing ~ p {
+    display: none;
+  }
 }
 .main__content--flex--right .main__content--amount-flex {
   display: flex;
