@@ -431,8 +431,6 @@ header {
 .mobile__gallery {
   position: relative;
   background-image: url(/images/image-product-1.jpg);
-  width: 63rem;
-  height: 55rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -492,6 +490,8 @@ header {
   .main__content--flex {
     flex-direction: column;
     gap: 3rem;
+    width: 80%;
+    border: 1px solid black;
   }
 }
 .main__content--flex--left {
@@ -530,6 +530,12 @@ header {
   gap: 1rem;
   flex-basis: 40%;
   border: 1px solid blue;
+}
+@media (max-width: 39.999em) {
+  .main__content--flex--right {
+    border: 1px solid red;
+    width: 20%;
+  }
 }
 .main__content--flex--right h2 {
   color: #ff7d1a;
