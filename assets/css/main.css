@@ -215,6 +215,12 @@ header {
   cursor: pointer;
   transition: all 0.5s;
 }
+@media (max-width: 39.999em) {
+  .amount__submit {
+    width: 100%;
+    padding: 1.7rem 0;
+  }
+}
 .amount__submit:hover {
   transform: scale(1.05);
 }
@@ -236,8 +242,7 @@ header {
 }
 @media (max-width: 39.999em) {
   .amount__submit .submit-btn img {
-    width: 11%;
-    border: 1px solid red;
+    width: 6%;
   }
 }
 
@@ -658,7 +663,7 @@ main {
 @media (max-width: 39.999em) {
   .main__content--flex--right .main__content--amount-flex {
     flex-direction: column;
-    border: 1px solid red;
+    gap: 1.5rem;
   }
 }
 .main__content--flex--right .main__content--amount-flex .amount__container {
@@ -673,8 +678,8 @@ main {
 }
 @media (max-width: 39.999em) {
   .main__content--flex--right .main__content--amount-flex .amount__container {
-    border: 1px solid blue;
     width: 100%;
+    padding: 2.5rem 1rem;
   }
 }
 

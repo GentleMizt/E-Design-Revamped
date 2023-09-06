@@ -158,7 +158,7 @@ main{
 
         @include mq(640px){
           flex-direction: column;
-          border: 1px solid red;
+          gap: 1.5rem;
         }
 
         .amount__container {
@@ -170,8 +170,8 @@ main{
           cursor: pointer;
 
           @include mq(640px){
-            border: 1px solid blue;
-            width: 100%;;
+            width: 100%;
+            padding: 2.5rem 1rem;
           }
         }
       }
