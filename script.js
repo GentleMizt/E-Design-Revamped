@@ -190,9 +190,6 @@ nextIcon.addEventListener("click", () => {
   updateThumbImgBorder();
 });
 
-// overlayClose.addEventListener('click', (e)=>{
-//   overlay.classList.add('hidden');
-// })
 
 hamMenu.addEventListener('click', ()=>{
   overlay.style.display = 'block';
