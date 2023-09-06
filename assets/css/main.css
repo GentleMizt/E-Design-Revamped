@@ -576,7 +576,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 45%;
+  width: 60%;
+  border: 1px solid red;
 }
 @media (max-width: 61.999em) {
   .main__content--flex--right .main__content--pricing {
