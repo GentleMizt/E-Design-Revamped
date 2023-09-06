@@ -9,8 +9,6 @@
   height: 100vh;
   z-index: 3000;
   transition: all 0.5s;
-  // opacity: 0;
-  // visibility: hidden;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(20px);
 
@@ -74,68 +72,6 @@
       }
     }
 
-    .slider {
-      // max-width: 200rem;
-      height: 40rem;
-      margin: 0 auto;
-      position: relative;
-      // z-index: -10;
-
-      /* IN THE END */
-      overflow: hidden;
-      border: 1px solid white;
-
-      .slide {
-        border: 1px solid blue;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 40rem;
-        // z-index: -1;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        /* THIS creates the animation! */
-        transition: transform 1s;
-
-        & > img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          display: block;
-        }
-      }
-    }
-
-    .slider__btn {
-      position: absolute;
-      top: 43%;
-      // z-index: ;
-
-      border: none;
-      background: rgba(255, 255, 255, 0.7);
-      font-family: inherit;
-      color: #333;
-      border-radius: 50%;
-      height: 5.5rem;
-      width: 5.5rem;
-      font-size: 3.25rem;
-      cursor: pointer;
-    }
-
-    .slider__btn--left {
-      left: 2%;
-      // z-index: 5000;
-      transform: translate(-50%, -50%);
-    }
-
-    .slider__btn--right {
-      right: 2%;
-      transform: translate(50%, -50%);
-    }
-
     .popup__img-gallery {
       width: 90%;
       margin: 2rem auto 0 auto;
@@ -143,14 +79,9 @@
 
       img {
         width: 20%;
-
         border-radius: 0.7rem;
       }
     }
   }
 
-  &:target {
-    opacity: 1;
-    visibility: visible;
-  }
 }

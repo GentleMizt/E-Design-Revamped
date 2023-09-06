@@ -35,7 +35,6 @@ main{
 
       .main__content--img{
         @include mq(640px){
-          border: 1px solid blue;
         }
 
         img {
@@ -123,13 +122,10 @@ main{
 
         @include mq(tab-port){
           min-width: 18.6rem;
-          border: 1px solid yellow;
         }
 
         @include mq(640px){
           width: 100%;
-          // min-width: 18.6rem;
-          border: 1px solid red;
         }
 
         div {
