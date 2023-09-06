@@ -3,7 +3,7 @@
 .mobile__gallery{
     position: relative;
     background-image: url(/images/image-product-1.jpg);
-    // width: 63rem;
+    z-index: -100;
     height: 53rem;   
     width: 100%;
 
