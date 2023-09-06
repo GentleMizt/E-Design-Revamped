@@ -134,8 +134,9 @@ main{
         }
 
         #hidden-price{
-          border: 1px solid blue;
           text-decoration: line-through;
+          font-weight: 550;
+          font-size: 2rem;
           display: none;
 
           @include mq(640px){

@@ -626,8 +626,9 @@ main {
   font-size: 1.6rem;
 }
 .main__content--flex--right .main__content--pricing #hidden-price {
-  border: 1px solid blue;
   text-decoration: line-through;
+  font-weight: 550;
+  font-size: 2rem;
   display: none;
 }
 @media (max-width: 39.999em) {
