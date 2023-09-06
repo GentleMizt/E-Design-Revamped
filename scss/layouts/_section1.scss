@@ -1,9 +1,23 @@
 @use "../abstracts/" as *;
+main{
+  @include m-auto;
+  border: 1px solid red;
+ 
+  @include mq(640px){
+    margin-top: 2rem;
+  }
+}
 
 .main__content {
   @include m-auto;
   margin-top: 3rem;
   padding: 0 2rem;
+
+  @include mq(640px){
+    margin-top: 0;
+    padding: 0;
+    width: 100%
+  }
   
   &--flex {
     @include dflexhalf;
@@ -12,7 +26,7 @@
     @include mq(640px){
       flex-direction: column;
       gap: 3rem;
-      width: 80%;
+      width: 100%;
       border: 1px solid black;
     }
 
@@ -58,7 +72,7 @@
 
       @include mq(640px){
         border: 1px solid red;
-        width: 20%;
+        // width: 20%;
       }
 
       h2 {

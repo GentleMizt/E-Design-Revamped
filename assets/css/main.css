@@ -477,11 +477,29 @@ header {
   left: 1.5rem;
 }
 
+main {
+  width: 85%;
+  margin: auto;
+  border: 1px solid red;
+}
+@media (max-width: 39.999em) {
+  main {
+    margin-top: 2rem;
+  }
+}
+
 .main__content {
   width: 85%;
   margin: auto;
   margin-top: 3rem;
   padding: 0 2rem;
+}
+@media (max-width: 39.999em) {
+  .main__content {
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
 }
 .main__content--flex {
   display: flex;
@@ -492,7 +510,7 @@ header {
   .main__content--flex {
     flex-direction: column;
     gap: 3rem;
-    width: 80%;
+    width: 100%;
     border: 1px solid black;
   }
 }
@@ -536,7 +554,6 @@ header {
 @media (max-width: 39.999em) {
   .main__content--flex--right {
     border: 1px solid red;
-    width: 20%;
   }
 }
 .main__content--flex--right h2 {
