@@ -655,6 +655,12 @@ main {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 39.999em) {
+  .main__content--flex--right .main__content--amount-flex {
+    flex-direction: column;
+    border: 1px solid red;
+  }
+}
 .main__content--flex--right .main__content--amount-flex .amount__container {
   display: flex;
   align-items: center;
@@ -664,6 +670,12 @@ main {
   padding: 1rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+@media (max-width: 39.999em) {
+  .main__content--flex--right .main__content--amount-flex .amount__container {
+    border: 1px solid blue;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

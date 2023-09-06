@@ -156,6 +156,11 @@ main{
       .main__content--amount-flex {
         @include dflexcomp;
 
+        @include mq(640px){
+          flex-direction: column;
+          border: 1px solid red;
+        }
+
         .amount__container {
           @include dflexcomp;
           background: $blue;
@@ -163,6 +168,11 @@ main{
           padding: 1rem 1rem;
           border-radius: 0.5rem;
           cursor: pointer;
+
+          @include mq(640px){
+            border: 1px solid blue;
+            width: 100%;;
+          }
         }
       }
     }
