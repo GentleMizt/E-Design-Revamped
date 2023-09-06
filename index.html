@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FE || E-Design</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="./images/favicon-32x32.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__left">
+          <svg class="nav__left--hamMenu" id="hamburger-menu">
+            <use xlink:href="./images/icon-menu.svg#menu-icon"></use>
+          </svg>
+          <img class="nav-logo" src="./images/logo.svg" alt="sneaker-logo" />
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#">Collections</a></li>
+            <li><a class="nav-link" href="#">Men</a></li>
+            <li><a class="nav-link" href="#">Women</a></li>
+            <li><a class="nav-link" href="#">About</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav__right">
+          <div class="cart-div">
+            <img
+              class="img-cart"
+              src="./images/icon-cart.svg"
+              alt="cart-icon"
+            />
+            <div class="cart-amount"></div>
+          </div>
+          <div class="cart__dropdown hidden">
+            <h3 class="cart-heading">Cart</h3>
+            <div class="cart__dropdown--contents">
+              <h3 class="cart__content--h3">Your Cart is empty.</h3>
+            </div>
+          </div>
+
+          <img
+            class="img-avatar"
+            src="./images/image-avatar.png"
+            alt="image-avatar"
+          />
+        </div>
+      </nav>
+
+      <div class="overlay">
+        <div class="overlay__content">
+          <svg class="overlay__content--close">
+            <use xlink:href="./images/icon-close.svg#close-icon"></use>
+          </svg>
+
+          <ul class="overlay__content--nav-list2">
+            <li><a class="nav-link" href="#">Collections</a></li>
+            <li><a class="nav-link" href="#">Men</a></li>
+            <li><a class="nav-link" href="#">Women</a></li>
+            <li><a class="nav-link" href="#">About</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </header>
+
+    <main>
+      <section class="main__content">
+        <div class="main__content--flex">
+          <div class="main__content--flex--left desktop">
+            <div class="main__content--img">
+              <img
+                class="render-img"
+                src="./images/image-product-1.jpg"
+                alt="shoe"
+              />
+            </div>
+            <div class="main__content--img-gallery">
+              <img
+                class="m-img active-img"
+                src="./images/image-product-1.jpg"
+                alt="shoe-1"
+              />
+              <img
+                class="m-img"
+                src="./images/image-product-2.jpg"
+                alt="shoe-2"
+              />
+              <img
+                class="m-img"
+                src="./images/image-product-3.jpg"
+                alt="shoe-3"
+              />
+              <img
+                class="m-img"
+                src="./images/image-product-4.jpg"
+                alt="shoe-4"
+              />
+            </div>
+          </div>
+          <div class="main__content--flex--left mobile">
+            <div class="mobile__gallery">
+              <div class="mobile__gallery--prevs-div">
+                <svg class="arrow-left">
+                  <use xlink:href="./images/icon-previous.svg#prevs-id"></use>
+                </svg>
+              </div>
+              <div class="mobile__gallery--next-div">
+                <svg class="arrow-right">
+                  <use xlink:href="./images/icon-next.svg#next-id"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="main__content--flex--right">
+            <h2>SNEAKER COMPANY</h2>
+            <h3>Fall Limited Edition Sneakers</h3>
+            <p>
+              These low profile sneakers are your perfect casual wear companion.
+              Featuring a double rubber outer sole, they'll withstand everything
+              the weather can offer.
+            </p>
+
+            <div class="main__content--pricing">
+              <h3>$125.00</h3>
+              <div>50%</div>
+            </div>
+
+            <p>$250.00</p>
+
+            <div class="main__content--amount-flex">
+              <div class="amount__container">
+                <img
+                  class="amount-minus"
+                  src="./images/icon-minus.svg"
+                  alt="minus-icon"
+                />
+                <h4 class="amount-value">0</h4>
+                <img
+                  class="amount-plus"
+                  src="./images/icon-plus.svg"
+                  alt="plus-icon"
+                />
+              </div>
+              <div class="amount__submit">
+                <div class="submit-btn">
+                  <img src="./images/icon-cart-white.svg" alt="cart-icon" />
+                  <h4 id="add-cart">Add to Cart</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="popup hidden" id="popup">
+        <div class="popup__content">
+          <div class="popup__img">
+            <svg class="svg-close">
+              <use xlink:href="./images/icon-close.svg#close-icon"></use>
+            </svg>
+            <img
+              class="render-img2"
+              src="./images/image-product-1.jpg"
+              alt="shoe"
+            />
+            <div class="prevs-div">
+              <svg class="arrow-left">
+                <use xlink:href="./images/icon-previous.svg#prevs-id"></use>
+              </svg>
+            </div>
+            <div class="next-div">
+              <svg class="arrow-right">
+                <use xlink:href="./images/icon-next.svg#next-id"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="popup__img-gallery">
+            <img
+              class="m-img2 active-img"
+              src="./images/image-product-1.jpg"
+              alt="shoe-1"
+            />
+            <img
+              class="m-img2"
+              src="./images/image-product-2.jpg"
+              alt="shoe-2"
+            />
+            <img
+              class="m-img2"
+              src="./images/image-product-3.jpg"
+              alt="shoe-3"
+            />
+            <img
+              class="m-img2"
+              src="./images/image-product-4.jpg"
+              alt="shoe-4"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
