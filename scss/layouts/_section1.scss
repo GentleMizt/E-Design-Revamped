@@ -117,6 +117,12 @@ main{
           border-radius: 0.5rem;
           font-size: $p-size;
         }
+
+        #hidden-price{
+          border: 1px solid blue;
+          text-decoration: line-through;
+          display: none;
+        }
       }
 
       .main__content--pricing ~ p {
