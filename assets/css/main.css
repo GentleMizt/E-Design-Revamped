@@ -431,12 +431,11 @@ header {
 .mobile__gallery {
   position: relative;
   background-image: url(/images/image-product-1.jpg);
-  height: 50rem;
+  height: 53rem;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border: 1px solid red;
 }
 .mobile__gallery--prevs-div {
   background-color: white;
@@ -480,7 +479,6 @@ header {
 main {
   width: 85%;
   margin: auto;
-  border: 1px solid red;
 }
 @media (max-width: 39.999em) {
   main {
@@ -511,7 +509,6 @@ main {
     flex-direction: column;
     gap: 3rem;
     width: 100%;
-    border: 1px solid black;
   }
 }
 .main__content--flex--left {

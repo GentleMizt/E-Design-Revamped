@@ -4,13 +4,12 @@
     position: relative;
     background-image: url(/images/image-product-1.jpg);
     // width: 63rem;
-    height: 50rem;   
+    height: 53rem;   
     width: 100%;
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid red;
 
     &--prevs-div{
         @include arrow-divs;
