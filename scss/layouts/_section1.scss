@@ -84,11 +84,15 @@ main{
         }
       }
 
-      h3 {
+      & > h3 {
         font-size: 3rem;
 
         @include mq(land-phone){
           font-size: 2.4rem;
+        }
+
+        @include mq(640px){
+          font-size: 3rem;
         }
       }
 
@@ -104,6 +108,9 @@ main{
       .main__content--pricing {
         @include dflexcomp;
         width: 60%;
+        h3{
+          font-size: 3rem;
+        }
 
         @include mq(tab-port){
           min-width: 14.6rem;
