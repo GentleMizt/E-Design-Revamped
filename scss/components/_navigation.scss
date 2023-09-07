@@ -121,10 +121,25 @@ header {
         border-top: 1px solid $blue;
         min-height: 15vh;
         padding: 2rem 1rem;
+        
+        @include mq(640px){
+          border: 1px solid blue;
+          height: 90%;
+        }
 
         h3 {
           text-align: center;
           color: $blue;
+
+          @include mq(640px){
+            border: 1px solid red;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            font-size: 3rem;
+            width: 70%;
+          }
         }
 
         .cart__content--flex {

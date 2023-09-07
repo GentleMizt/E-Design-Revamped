@@ -179,9 +179,26 @@ header {
   min-height: 15vh;
   padding: 2rem 1rem;
 }
+@media (max-width: 39.999em) {
+  .nav__right .cart__dropdown--contents {
+    border: 1px solid blue;
+    height: 90%;
+  }
+}
 .nav__right .cart__dropdown--contents h3 {
   text-align: center;
   color: hsl(220, 14%, 75%);
+}
+@media (max-width: 39.999em) {
+  .nav__right .cart__dropdown--contents h3 {
+    border: 1px solid red;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    font-size: 3rem;
+    width: 70%;
+  }
 }
 .nav__right .cart__dropdown--contents .cart__content--flex {
   display: flex;
