@@ -181,7 +181,6 @@ header {
 }
 @media (max-width: 39.999em) {
   .nav__right .cart__dropdown--contents {
-    border: 1px solid blue;
     height: 90%;
   }
 }
@@ -191,7 +190,6 @@ header {
 }
 @media (max-width: 39.999em) {
   .nav__right .cart__dropdown--contents h3 {
-    border: 1px solid red;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
