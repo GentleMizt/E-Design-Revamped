@@ -41,3 +41,14 @@
     margin: auto;
   }
 }
+
+.cart__content--button{
+  background-color: $pry-orange;
+  color: $white;
+  border: none;
+  position: relative;
+  left: 50%;
+  margin-top: 1rem;
+  transform: translateX(-50%);
+  width: 100%;
+}

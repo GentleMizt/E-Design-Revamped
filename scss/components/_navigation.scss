@@ -115,6 +115,10 @@ header {
 
       .cart-heading{
         padding: .8rem;
+
+        @include mq(640px){
+          font-size: 3rem;
+        }
       }
 
       &--contents {
