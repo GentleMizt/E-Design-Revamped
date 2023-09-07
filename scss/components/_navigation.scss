@@ -104,7 +104,7 @@ header {
       z-index: 3;
       top: 5rem;
       right: 4rem;
-      width: 22%;
+      width: 25%;
 
       @include mq(640px){
         width: 90%;
@@ -123,8 +123,9 @@ header {
 
       &--contents {
         border-top: 1px solid $blue;
-        min-height: 15vh;
+        min-height: 23vh;
         padding: 2rem 1rem;
+        position: relative;
         
         @include mq(640px){
           height: 90%;
@@ -145,6 +146,9 @@ header {
         }
 
         .cart__content--flex {
+          position: absolute;
+          top: 15%;
+          border: 1px solid red;
           @include dflexcomp;
           gap: .5rem;
 

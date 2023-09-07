@@ -46,8 +46,9 @@
   background-color: $pry-orange;
   color: $white;
   border: none;
-  position: relative;
+  position: absolute;
   left: 50%;
+  top: 51%;
   margin-top: 1rem;
   transform: translateX(-50%);
   width: 100%;
