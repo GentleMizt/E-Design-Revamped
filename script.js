@@ -16,6 +16,7 @@ const cartIcon = document.querySelector(".img-cart");
 const cartDrop = document.querySelector(".cart__dropdown");
 const cartDropCont = document.querySelector(".cart__dropdown--contents");
 const cartConth3 = document.querySelector(".cart__content--h3");
+const cartButton = document.querySelector('.cart__content--button');
 
 // Defining img file path of the images
 const thumb1 = "/images/image-product-1-thumbnail.jpg";
