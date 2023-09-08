@@ -171,12 +171,10 @@ header {
     right: 3rem;
     height: 45%;
     padding: 0rem 1.9rem 1rem 1.9rem;
-    border: 1px solid blue;
   }
 }
 @media (max-width: 29.679em) {
   .nav__right .cart__dropdown {
-    border: 1px solid black;
     height: 38%;
   }
 }
@@ -251,6 +249,11 @@ header {
 @media (max-width: 39.999em) {
   .nav__right .cart__dropdown--contents .cart__content--flex .content-texts p {
     font-size: 2.3rem;
+  }
+}
+@media (max-width: 29.679em) {
+  .nav__right .cart__dropdown--contents .cart__content--flex .content-texts p {
+    font-size: 1.9rem;
   }
 }
 .nav__right .cart__dropdown--contents .cart__content--flex .content-texts span {
