@@ -71,6 +71,7 @@ const addToCart = (cartamt) => {
         cartItem.remove();
         cartAmt.style.display = "none";
         cartConth3.classList.remove("hidden");
+        cartButton.classList.add('hidden');
       }
     }
   });
@@ -96,6 +97,7 @@ amtSubmit.addEventListener("click", () => {
 
   // calling the function addToCart to display the UI in the cart.
   addToCart(cartAmt.textContent);
+  cartButton.classList.remove('hidden');
 });
 
 
