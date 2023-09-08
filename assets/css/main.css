@@ -176,7 +176,8 @@ header {
 }
 @media (max-width: 29.679em) {
   .nav__right .cart__dropdown {
-    border: 1px solid red;
+    border: 1px solid black;
+    height: 38%;
   }
 }
 .nav__right .cart__dropdown .cart-heading {
@@ -210,9 +211,14 @@ header {
     text-align: center;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 38%;
     font-size: 3rem;
     width: 70%;
+  }
+}
+@media (max-width: 29.679em) {
+  .nav__right .cart__dropdown--contents h3 {
+    font-size: 2rem;
   }
 }
 .nav__right .cart__dropdown--contents .cart__content--flex {
@@ -318,6 +324,11 @@ header {
   .cart__content--button {
     padding: 2.5rem 0;
     top: 59%;
+  }
+}
+@media (max-width: 29.679em) {
+  .cart__content--button {
+    top: 53%;
   }
 }
 

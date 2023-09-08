@@ -117,7 +117,7 @@ header {
       }
 
       @include mq(475px){
-        border: 1px solid red ;
+        border: 1px solid black ;
         height: 38%;
       }
 
@@ -150,9 +150,13 @@ header {
             text-align: center;
             left: 50%;
             transform: translate(-50%, -50%);
-            top: 50%;
+            top: 38%;
             font-size: 3rem;
             width: 70%;
+          }
+
+          @include mq(475px){
+            font-size: 2rem;
           }
         }
 

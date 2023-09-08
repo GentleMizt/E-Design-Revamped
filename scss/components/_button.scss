@@ -60,4 +60,8 @@
     padding: 2.5rem 0;
     top: 59%;
   }
+
+  @include mq(475px){
+    top: 53%;
+  }
 }
