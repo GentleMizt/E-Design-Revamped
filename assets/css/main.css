@@ -162,7 +162,7 @@ header {
   top: 5rem;
   right: 4rem;
   width: 28%;
-  padding: 0rem 1.5rem;
+  padding: 0rem 1.5rem 1rem 1.5rem;
 }
 @media (max-width: 39.999em) {
   .nav__right .cart__dropdown {
