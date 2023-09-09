@@ -1,35 +1,33 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
-.mobile__gallery{
-    position: relative;
-    background-image: url(/images/image-product-1.jpg);
-    z-index: -100;
-    height: 53rem;   
-    width: 100%;
+.mobile__gallery {
+  position: relative;
+  background-image: url(/images/image-product-1.jpg);
+  z-index: -100;
+  height: 53rem;
+  width: 100%;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-    &--prevs-div{
-        @include arrow-divs;
-        left: 6.5rem;
-        
-        .arrow-left{
-            @include arrow-icons2;
-            left: 1.2rem;
-        }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &--prevs-div {
+    @include arrow-divs;
+    left: 6.5rem;
+
+    .arrow-left {
+      @include arrow-icons2;
+      left: 1.2rem;
     }
-    
-    &--next-div{
-        @include arrow-divs;
-        right: 6.5rem;
-    
-        .arrow-right{
-            @include arrow-icons2;
-            left: 1.5rem;
-        }
-    
+  }
+
+  &--next-div {
+    @include arrow-divs;
+    right: 6.5rem;
+
+    .arrow-right {
+      @include arrow-icons2;
+      left: 1.5rem;
     }
-    
+  }
 }

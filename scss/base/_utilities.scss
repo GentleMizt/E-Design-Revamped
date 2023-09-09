@@ -1,23 +1,23 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
-.active-img{
-    border: 2px solid $pry-orange;
+.active-img {
+  border: 2px solid $pry-orange;
 }
 
-.hidden{
+.hidden {
+  display: none;
+}
+
+.mobile {
+  display: none;
+  @include mq(640px) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.desktop {
+  @include mq(640px) {
     display: none;
-}
-
-.mobile{
-    display: none;
-    @include mq(640px){
-        display: block;
-        width: 100%;
-    }
-}
-
-.desktop{
-    @include mq(640px){
-        display: none;
-    }
+  }
 }

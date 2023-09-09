@@ -15,7 +15,11 @@ const cartIcon = document.querySelector(".img-cart");
 const cartDrop = document.querySelector(".cart__dropdown");
 const cartDropCont = document.querySelector(".cart__dropdown--contents");
 const cartConth3 = document.querySelector(".cart__content--h3");
-const cartButton = document.querySelector('.cart__content--button');
+const cartButton = document.querySelector(".cart__content--button");
+
+const renderedImg3 = document.querySelector(".mobile__gallery");
+const mobilePrevs = document.querySelector("#prevs-div2");
+const mobileNext = document.querySelector("#next-div2");
 
 // Defining img file path of the images
 const thumb1 = "/images/image-product-1-thumbnail.jpg";
@@ -24,10 +28,10 @@ const popup = document.querySelector(".popup");
 const closeIcon = document.querySelector(".svg-close");
 const prevsIcon = document.querySelector(".prevs-div");
 const nextIcon = document.querySelector(".next-div");
-const hamMenu = document.querySelector('#hamburger-menu');
+const hamMenu = document.querySelector("#hamburger-menu");
 
-const overlay = document.querySelector('.overlay');
-const overlayClose = document.querySelector('.overlay__content--close');
+const overlay = document.querySelector(".overlay");
+const overlayClose = document.querySelector(".overlay__content--close");
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -69,7 +73,7 @@ const addToCart = (cartamt) => {
         cartItem.remove();
         cartAmt.style.display = "none";
         cartConth3.classList.remove("hidden");
-        cartButton.classList.add('hidden');
+        cartButton.classList.add("hidden");
       }
     }
   });
@@ -95,9 +99,8 @@ amtSubmit.addEventListener("click", () => {
 
   // calling the function addToCart to display the UI in the cart.
   addToCart(cartAmt.textContent);
-  cartButton.classList.remove('hidden');
+  cartButton.classList.remove("hidden");
 });
-
 
 const changeImg = (imgNodeList, imgRender) => {
   // Implementing the img-thumbnail functionality
@@ -153,11 +156,6 @@ const img3 = "/images/image-product-3.jpg";
 const img4 = "/images/image-product-4.jpg";
 const newMimg2 = [img1, img2, img3, img4];
 
-
-const renderedImg3 = document.querySelector('.mobile__gallery');
-const mobilePrevs = document.querySelector('#prevs-div2');
-const mobileNext = document.querySelector('#next-div2');
-
 // setting a new count to keep track of the current index.
 let currentImageIndex = 0;
 
@@ -175,7 +173,7 @@ const slideImg = (offset, arrowImg) => {
   if (arrowImg === renderedImg2) {
     renderedImg2.src = newMimg2[currentImageIndex];
   } else {
-    renderedImg3.style.backgroundImage = `url(${newMimg2[currentImageIndex]})`
+    renderedImg3.style.backgroundImage = `url(${newMimg2[currentImageIndex]})`;
   }
 };
 
@@ -200,22 +198,19 @@ nextIcon.addEventListener("click", () => {
 });
 
 mobilePrevs.addEventListener("click", () => {
-  console.log('was cliked');
+  console.log("was cliked");
   slideImg(-1, renderedImg3);
 });
 
 mobileNext.addEventListener("click", () => {
-  console.log('was cliked yeah');
+  console.log("was cliked yeah");
   slideImg(1, renderedImg3);
 });
 
-
-hamMenu.addEventListener('click', ()=>{
-  overlay.style.display = 'block';
-})
-
-overlayClose.addEventListener('click', function () {
-  overlay.style.display = 'none';
+hamMenu.addEventListener("click", () => {
+  overlay.style.display = "block";
 });
 
-
+overlayClose.addEventListener("click", function () {
+  overlay.style.display = "none";
+});
