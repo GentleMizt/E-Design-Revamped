@@ -73,7 +73,7 @@ const addToCart = (cartamt) => {
         cartItem.remove();
         cartAmt.style.display = "none";
         cartConth3.classList.remove("hidden");
-        cartButton.classList.add("hidden");
+        cartButton.style.display = 'none';
       }
     }
   });
@@ -94,7 +94,8 @@ amtSubmit.addEventListener("click", () => {
   amtTotal > 0
     ? ((cartAmt.textContent = amtTotal),
       cartConth3.classList.add("hidden"),
-      (cartItem.style.display = "flex"))
+      (cartItem.style.display = "flex"),
+      (cartButton.style.display = 'block'))
     : ((cartAmt.style.display = "none"), (cartItem.style.display = "none"), (cartButton.style.display = 'none'));
 
   // calling the function addToCart to display the UI in the cart.
