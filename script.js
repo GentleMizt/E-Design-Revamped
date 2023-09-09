@@ -95,7 +95,7 @@ amtSubmit.addEventListener("click", () => {
     ? ((cartAmt.textContent = amtTotal),
       cartConth3.classList.add("hidden"),
       (cartItem.style.display = "flex"))
-    : ((cartAmt.style.display = "none"), (cartItem.style.display = "none"));
+    : ((cartAmt.style.display = "none"), (cartItem.style.display = "none"), (cartButton.style.display = 'none'));
 
   // calling the function addToCart to display the UI in the cart.
   addToCart(cartAmt.textContent);
