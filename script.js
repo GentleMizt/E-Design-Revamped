@@ -238,8 +238,9 @@ overlayClose.addEventListener("click", function () {
   overlay.style.display = "none";
 });
 
-document.addEventListener('click', e => {
-  if (cartDrop.style.display === 'block' && e.target !== cartIcon && !cartDrop.contains(e.target)) {
-    cartDrop.style.display = 'none';
+window.addEventListener('click', e => {
+  if (!cartDrop.classList.contains('hidden') && e.target !== cartIcon && !cartDrop.contains(e.target) && e.target !== amtSubmit) {
+    cartDrop.classList.add('hidden');
   }
+
 });
