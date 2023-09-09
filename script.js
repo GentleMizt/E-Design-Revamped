@@ -45,6 +45,32 @@ amtSub.addEventListener("click", (e) => {
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
 });
 
+
+// Implementing the add to cart functionality
+let cartAmtHolder = [];
+amtSubmit.addEventListener("click", () => {
+  // setting the cart amount to be visible
+  cartAmt.style.display = "block";
+  cartAmtHolder.push(amtVal.textContent);
+  amtVal.textContent = 0;
+
+  // adding up all the numbers in the holders array and then storing it into a variable
+  const amtTotal = cartAmtHolder.reduce((acc, amt) => acc + parseFloat(amt), 0);
+
+  // Updating the UI based on the condition true or false of the amtTotal variable.
+  amtTotal > 0
+    ? ((cartAmt.textContent = amtTotal),
+      cartConth3.classList.add("hidden"),
+      (cartItem.style.display = "flex"),
+      (cartButton.style.display = 'block'))
+    : ((cartAmt.style.display = "none"), (cartItem.style.display = "none"), (cartButton.style.display = 'none'));
+
+  // calling the function addToCart to display the UI in the cart.
+  addToCart(cartAmt.textContent);
+  cartButton.classList.remove("hidden");
+});
+
+
 let cartItem;
 cartItem = document.createElement("div");
 cartItem.classList.add("cart__content--flex");
@@ -74,34 +100,30 @@ const addToCart = (cartamt) => {
         cartAmt.style.display = "none";
         cartConth3.classList.remove("hidden");
         cartButton.style.display = 'none';
+        cartAmtHolder = [];
       }
     }
   });
 };
 
-// Implementing the add to cart functionality
-let cartAmtHolder = [];
-amtSubmit.addEventListener("click", () => {
-  // setting the cart amount to be visible
-  cartAmt.style.display = "block";
-  cartAmtHolder.push(amtVal.textContent);
-  amtVal.textContent = 0;
 
-  // adding up all the numbers in the holders array and then storing it into a variable
-  const amtTotal = cartAmtHolder.reduce((acc, amt) => acc + parseFloat(amt), 0);
 
-  // Updating the UI based on the condition true or false of the amtTotal variable.
-  amtTotal > 0
-    ? ((cartAmt.textContent = amtTotal),
-      cartConth3.classList.add("hidden"),
-      (cartItem.style.display = "flex"),
-      (cartButton.style.display = 'block'))
-    : ((cartAmt.style.display = "none"), (cartItem.style.display = "none"), (cartButton.style.display = 'none'));
 
-  // calling the function addToCart to display the UI in the cart.
-  addToCart(cartAmt.textContent);
-  cartButton.classList.remove("hidden");
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const changeImg = (imgNodeList, imgRender) => {
   // Implementing the img-thumbnail functionality
@@ -214,4 +236,10 @@ hamMenu.addEventListener("click", () => {
 
 overlayClose.addEventListener("click", function () {
   overlay.style.display = "none";
+});
+
+document.addEventListener('click', e => {
+  if (cartDrop.style.display === 'block' && e.target !== cartIcon && !cartDrop.contains(e.target)) {
+    cartDrop.style.display = 'none';
+  }
 });
