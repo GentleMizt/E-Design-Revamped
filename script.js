@@ -10,7 +10,6 @@ const mImg = document.querySelectorAll(".m-img");
 const mImg2 = document.querySelectorAll(".m-img2");
 const renderedImg = document.querySelector(".render-img");
 const renderedImg2 = document.querySelector(".render-img2");
-// const renderedImg3 = document.querySelector(".render-img3");
 
 const cartIcon = document.querySelector(".img-cart");
 const cartDrop = document.querySelector(".cart__dropdown");
@@ -29,7 +28,6 @@ const hamMenu = document.querySelector('#hamburger-menu');
 
 const overlay = document.querySelector('.overlay');
 const overlayClose = document.querySelector('.overlay__content--close');
-
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -143,7 +141,6 @@ renderedImg.addEventListener("click", () => {
 });
 
 closeIcon.addEventListener("click", () => {
-  console.log('I was ciicked');
   popup.classList.add("hidden");
 });
 
@@ -156,10 +153,15 @@ const img3 = "/images/image-product-3.jpg";
 const img4 = "/images/image-product-4.jpg";
 const newMimg2 = [img1, img2, img3, img4];
 
+
+const renderedImg3 = document.querySelector('.mobile__gallery');
+const mobilePrevs = document.querySelector('#prevs-div2');
+const mobileNext = document.querySelector('#next-div2');
+
 // setting a new count to keep track of the current index.
 let currentImageIndex = 0;
 
-const slideImg = (offset) => {
+const slideImg = (offset, arrowImg) => {
   currentImageIndex += offset;
 
   // Handle wrapping around the gallery.
@@ -170,7 +172,11 @@ const slideImg = (offset) => {
   }
 
   // setting the source of the rendered image.
-  renderedImg2.src = newMimg2[currentImageIndex];
+  if (arrowImg === renderedImg2) {
+    renderedImg2.src = newMimg2[currentImageIndex];
+  } else {
+    renderedImg3.style.backgroundImage = `url(${newMimg2[currentImageIndex]})`
+  }
 };
 
 const updateThumbImgBorder = () => {
@@ -184,13 +190,23 @@ const updateThumbImgBorder = () => {
 };
 
 prevsIcon.addEventListener("click", () => {
-  slideImg(-1);
+  slideImg(-1, renderedImg2);
   updateThumbImgBorder();
 });
 
 nextIcon.addEventListener("click", () => {
-  slideImg(1);
+  slideImg(1, renderedImg2);
   updateThumbImgBorder();
+});
+
+mobilePrevs.addEventListener("click", () => {
+  console.log('was cliked');
+  slideImg(-1, renderedImg3);
+});
+
+mobileNext.addEventListener("click", () => {
+  console.log('was cliked yeah');
+  slideImg(1, renderedImg3);
 });
 
 
@@ -198,7 +214,8 @@ hamMenu.addEventListener('click', ()=>{
   overlay.style.display = 'block';
 })
 
+overlayClose.addEventListener('click', function () {
+  overlay.style.display = 'none';
+});
 
-  overlayClose.addEventListener('click', function () {
-    overlay.style.display = 'none';
-  });
+

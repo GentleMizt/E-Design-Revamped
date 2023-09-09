@@ -10,26 +10,26 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    
     &--prevs-div{
         @include arrow-divs;
-        left: 1.5rem;
+        left: 6.5rem;
         
         .arrow-left{
             @include arrow-icons2;
             left: 1.2rem;
         }
     }
-
+    
     &--next-div{
         @include arrow-divs;
-        right: 1.5rem;
-
+        right: 6.5rem;
+    
         .arrow-right{
             @include arrow-icons2;
             left: 1.5rem;
         }
-
+    
     }
-
+    
 }
