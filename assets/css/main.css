@@ -308,6 +308,9 @@ header {
   .amount__submit .submit-btn img {
     width: 6%;
   }
+  .amount__submit .submit-btn h4 {
+    font-size: 1.3rem;
+  }
 }
 
 .cart__content--button {
@@ -737,6 +740,9 @@ main {
   .main__content--flex--right .main__content--amount-flex .amount__container {
     width: 100%;
     padding: 2.2rem 1rem;
+  }
+  .main__content--flex--right .main__content--amount-flex .amount__container h4 {
+    font-size: 2rem;
   }
 }
 
