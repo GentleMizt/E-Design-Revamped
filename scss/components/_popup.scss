@@ -22,14 +22,30 @@
       position: relative;
 
       .svg-close {
-        width: 3.5%;
-        height: 1.5rem;
+        border: 1px solid red;
+        width: 5.5%;
+        height: 2.5rem;
+        padding-left: .5rem;
         position: absolute;
-        right: 0rem;
+        right: 0;
         top: -2.5rem;
         fill: $white;
         transition: all 0.2s;
 
+        @include mq(tab-port){
+          border: 1px solid blue;
+          width: 7.5%;
+        }
+
+        @include mq(land-phone){
+          border: 1px solid yellow;
+          width: 8.5%;
+        }
+
+        @include mq(640px){
+          width: 10%;
+          border: 1px solid white;
+        }
         &:hover {
           fill: $pry-orange;
         }
@@ -44,14 +60,13 @@
       .prevs-div {
         @include arrow-divs;
         left: -1.4rem;
-        border: 1px solid black;
 
         .arrow-left {
           @include arrow-icons;
           top: 57%;
           position: absolute;
           transform: translate(-50%, -50%);
-          left: 50%;
+          left: 44%;
 
           &:hover {
             stroke: $pry-orange;
@@ -62,7 +77,6 @@
       .next-div {
         @include arrow-divs;
         right: -1.4rem;
-        border: 1px solid black;
 
         .arrow-right {
           @include arrow-icons;
