@@ -555,7 +555,7 @@ main {
 @media (max-width: 39.999em) {
   main {
     padding: 3rem 0;
-    margin-top: 2rem;
+    width: 100%;
   }
 }
 

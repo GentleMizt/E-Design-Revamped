@@ -4,7 +4,7 @@ main {
 
   @include mq(640px) {
     padding: 3rem 0;
-    margin-top: 2rem;
+    width: 100%
   }
 }
 
