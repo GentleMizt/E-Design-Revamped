@@ -44,11 +44,14 @@
       .prevs-div {
         @include arrow-divs;
         left: -1.4rem;
+        border: 1px solid black;
 
         .arrow-left {
-          @include center-vertical-horizontal;
           @include arrow-icons;
-          left: 1.3rem;
+          top: 57%;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          left: 50%;
 
           &:hover {
             stroke: $pry-orange;
@@ -59,11 +62,14 @@
       .next-div {
         @include arrow-divs;
         right: -1.4rem;
+        border: 1px solid black;
 
         .arrow-right {
-          @include center-vertical-horizontal;
           @include arrow-icons;
-          left: 1.5rem;
+          top: 57%;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          left: 50%;
 
           &:hover {
             stroke: $pry-orange;

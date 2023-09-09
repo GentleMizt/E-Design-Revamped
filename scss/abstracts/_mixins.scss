@@ -53,13 +53,15 @@ $breakpoints: (
   width: 35px;
   height: 35px;
   position: absolute;
-  bottom: 50%;
-}
+  top: 50%;
+  transform: translateY(-50%);}
 
 @mixin arrow-icons {
   width: 35%;
+  height: 70%;
+  border: 1px solid red;
   display: inline-block;
-  top: 6.8rem;
+  // top: 6.8rem;
   fill: white;
   stroke: black;
   transition: all 0.2s;
