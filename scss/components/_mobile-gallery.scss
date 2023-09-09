@@ -12,12 +12,18 @@
   background-position: center;
 
   &--prevs-div {
-    @include arrow-divs;
-    left: 6.5rem;
     display: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4.5rem;;
 
     @include mq(640px){
-        display: block;
+      display: block;
     }
 
     .arrow-left {
@@ -27,12 +33,18 @@
   }
 
   &--next-div {
-    @include arrow-divs;
-    right: 6.5rem;
     display: none;
+    background-color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4.5rem;
 
     @include mq(640px){
-        display: block;
+     display: block;
     }
 
     .arrow-right {

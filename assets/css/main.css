@@ -45,6 +45,7 @@ body {
   .mobile {
     display: block;
     width: 100%;
+    position: relative;
   }
 }
 
@@ -498,14 +499,15 @@ header {
   background-position: center;
 }
 .mobile__gallery--prevs-div {
+  display: none;
   background-color: white;
   border-radius: 50%;
   width: 35px;
   height: 35px;
   position: absolute;
-  bottom: 50%;
-  left: 6.5rem;
-  display: none;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4.5rem;
 }
 @media (max-width: 39.999em) {
   .mobile__gallery--prevs-div {
@@ -523,14 +525,15 @@ header {
   left: 1.2rem;
 }
 .mobile__gallery--next-div {
+  display: none;
   background-color: white;
   border-radius: 50%;
   width: 35px;
   height: 35px;
   position: absolute;
-  bottom: 50%;
-  right: 6.5rem;
-  display: none;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 4.5rem;
 }
 @media (max-width: 39.999em) {
   .mobile__gallery--next-div {
