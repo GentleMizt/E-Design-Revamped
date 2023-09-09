@@ -239,8 +239,7 @@ overlayClose.addEventListener("click", function () {
 });
 
 window.addEventListener('click', e => {
-  if (!cartDrop.classList.contains('hidden') && e.target !== cartIcon && !cartDrop.contains(e.target) && e.target !== amtSubmit) {
+  if (!cartDrop.classList.contains('hidden') && e.target !== cartIcon && !cartDrop.contains(e.target) && !e.target.classList.contains('img-delete')) {
     cartDrop.classList.add('hidden');
   }
-
 });
