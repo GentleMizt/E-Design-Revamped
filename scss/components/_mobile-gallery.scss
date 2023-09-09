@@ -14,6 +14,11 @@
   &--prevs-div {
     @include arrow-divs;
     left: 6.5rem;
+    display: none;
+
+    @include mq(640px){
+        display: block;
+    }
 
     .arrow-left {
       @include arrow-icons2;
@@ -24,6 +29,11 @@
   &--next-div {
     @include arrow-divs;
     right: 6.5rem;
+    display: none;
+
+    @include mq(640px){
+        display: block;
+    }
 
     .arrow-right {
       @include arrow-icons2;

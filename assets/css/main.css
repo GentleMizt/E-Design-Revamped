@@ -505,6 +505,12 @@ header {
   position: absolute;
   bottom: 50%;
   left: 6.5rem;
+  display: none;
+}
+@media (max-width: 39.999em) {
+  .mobile__gallery--prevs-div {
+    display: block;
+  }
 }
 .mobile__gallery--prevs-div .arrow-left {
   fill: white;
@@ -524,6 +530,12 @@ header {
   position: absolute;
   bottom: 50%;
   right: 6.5rem;
+  display: none;
+}
+@media (max-width: 39.999em) {
+  .mobile__gallery--next-div {
+    display: block;
+  }
 }
 .mobile__gallery--next-div .arrow-right {
   fill: white;
