@@ -67,6 +67,7 @@ header {
   &__right {
     @include dflexcomp;
     width: 8%;
+    // position: relative;
 
     @include mq(tab-port) {
       min-width: 7rem;
@@ -110,7 +111,8 @@ header {
       @include mq(640px) {
         width: 90%;
         top: 9rem;
-        right: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
         height: 45%;
         padding: 0rem 1.9rem 1rem 1.9rem;
       }
@@ -140,9 +142,13 @@ header {
           position: absolute;
           left: 50%;
           transform: translate(-50%, -50%);
-          top: 30%;
+          top: 44%;
+          font-size: 1.2rem;
           color: $blue;
 
+          @include mq(land-phone){
+            font-size: 1rem;
+          }
           @include mq(640px) {
             position: absolute;
             text-align: center;

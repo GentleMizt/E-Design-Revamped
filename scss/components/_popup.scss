@@ -33,18 +33,15 @@
         transition: all 0.2s;
 
         @include mq(tab-port){
-          border: 1px solid blue;
           width: 7.5%;
         }
 
         @include mq(land-phone){
-          border: 1px solid yellow;
           width: 8.5%;
         }
 
         @include mq(640px){
           width: 10%;
-          border: 1px solid white;
         }
         &:hover {
           fill: $pry-orange;
