@@ -30,8 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/GentleMizt/E-Design-Revamped)
-- Live Site URL: [Add live site URL here](https://thriving-crepe-54b537.netlify.app/)
+- Live Site URL: [Live Site URL](https://thriving-crepe-54b537.netlify.app/)
 
 ### Built with
 
