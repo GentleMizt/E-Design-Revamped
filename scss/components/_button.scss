@@ -1,5 +1,13 @@
 @use "../abstracts/" as *;
 
+.amount__container--button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 .amount__submit {
   background: $pry-orange;
   color: $white;

@@ -277,6 +277,12 @@ header {
   border: 2px solid #ff7d1a;
 }
 
+.amount__container--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .amount__submit {
   background: #ff7d1a;
   color: hsl(0, 0%, 100%);
