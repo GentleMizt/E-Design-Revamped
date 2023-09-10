@@ -766,6 +766,7 @@ main {
 }
 .main__content--flex--right .main__content--amount-flex .amount__container--button {
   background: hsl(220, 14%, 75%);
+  border: none;
 }
 @media (max-width: 39.999em) {
   .main__content--flex--right .main__content--amount-flex .amount__container {
