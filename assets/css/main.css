@@ -758,6 +758,9 @@ main {
   border-radius: 0.5rem;
   cursor: pointer;
 }
+.main__content--flex--right .main__content--amount-flex .amount__container--button {
+  background: hsl(220, 14%, 75%);
+}
 @media (max-width: 39.999em) {
   .main__content--flex--right .main__content--amount-flex .amount__container {
     width: 100%;
