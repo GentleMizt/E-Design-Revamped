@@ -144,11 +144,13 @@ const changeImg = (imgNodeList, imgRender) => {
       imgNodeList.forEach((img, index) => {
         if (index !== i) {
           img.classList.remove("active-img");
+          img.style.opacity = 1;
         }
       });
 
       // Adding the active-img class to the currently clicked image
       cur.classList.add("active-img");
+      cur.style.opacity = 0.5;
     });
   });
 };
