@@ -55,6 +55,14 @@ body {
   }
 }
 
+@keyframes overlay-anim {
+  0% {
+    transform: translateX(-4rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
 header {
   width: 85%;
   margin: auto;
@@ -492,6 +500,7 @@ header {
   position: absolute;
   height: 100vh;
   width: 66vw;
+  animation: overlay-anim 0.5s ease-in;
 }
 .overlay__content--close {
   width: 2rem;

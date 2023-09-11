@@ -12,6 +12,7 @@
     left: 0;
     background: $black-o;
     backdrop-filter: blur(20px);
+
   }
 
   &__content {
@@ -21,6 +22,7 @@
     position: absolute;
     height: 100vh;
     width: 66vw;
+    animation: overlay-anim .5s ease-in;
 
     &--close {
       width: 2rem;
