@@ -45,7 +45,6 @@ amtSub.addEventListener("click", (e) => {
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
 });
 
-
 // Implementing the add to cart functionality
 let cartAmtHolder = [];
 amtSubmit.addEventListener("click", () => {
@@ -62,14 +61,15 @@ amtSubmit.addEventListener("click", () => {
     ? ((cartAmt.textContent = amtTotal),
       cartConth3.classList.add("hidden"),
       (cartItem.style.display = "flex"),
-      (cartButton.style.display = 'block'))
-    : ((cartAmt.style.display = "none"), (cartItem.style.display = "none"), (cartButton.style.display = 'none'));
+      (cartButton.style.display = "block"))
+    : ((cartAmt.style.display = "none"),
+      (cartItem.style.display = "none"),
+      (cartButton.style.display = "none"));
 
   // calling the function addToCart to display the UI in the cart.
   addToCart(cartAmt.textContent);
   cartButton.classList.remove("hidden");
 });
-
 
 let cartItem;
 cartItem = document.createElement("div");
@@ -99,31 +99,12 @@ const addToCart = (cartamt) => {
         cartItem.remove();
         cartAmt.style.display = "none";
         cartConth3.classList.remove("hidden");
-        cartButton.style.display = 'none';
+        cartButton.style.display = "none";
         cartAmtHolder = [];
       }
     }
   });
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const changeImg = (imgNodeList, imgRender) => {
   // Implementing the img-thumbnail functionality
@@ -144,13 +125,11 @@ const changeImg = (imgNodeList, imgRender) => {
       imgNodeList.forEach((img, index) => {
         if (index !== i) {
           img.classList.remove("active-img");
-          img.style.opacity = 1;
         }
       });
 
       // Adding the active-img class to the currently clicked image
       cur.classList.add("active-img");
-      cur.style.opacity = 0.5;
     });
   });
 };
@@ -240,8 +219,13 @@ overlayClose.addEventListener("click", function () {
   overlay.style.display = "none";
 });
 
-window.addEventListener('click', e => {
-  if (!cartDrop.classList.contains('hidden') && e.target !== cartIcon && !cartDrop.contains(e.target) && !e.target.classList.contains('img-delete')) {
-    cartDrop.classList.add('hidden');
+window.addEventListener("click", (e) => {
+  if (
+    !cartDrop.classList.contains("hidden") &&
+    e.target !== cartIcon &&
+    !cartDrop.contains(e.target) &&
+    !e.target.classList.contains("img-delete")
+  ) {
+    cartDrop.classList.add("hidden");
   }
 });

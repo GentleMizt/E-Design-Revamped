@@ -32,6 +32,7 @@ body {
 
 .active-img {
   border: 2px solid #ff7d1a;
+  opacity: 0.45;
 }
 
 .hidden {
