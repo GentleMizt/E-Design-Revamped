@@ -600,7 +600,7 @@ header {
 }
 .attribution a {
   color: #ff7d1a;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 main {
