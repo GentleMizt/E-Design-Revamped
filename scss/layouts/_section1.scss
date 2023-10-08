@@ -83,7 +83,7 @@ main {
         }
       }
 
-      & > h3 {
+      & > h2 {
         font-size: 3rem;
 
         @include mq(land-phone) {
